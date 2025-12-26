@@ -1,7 +1,7 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
-const ALLOWED_EMAIL = "jonathan@fullerhorizons.net";
+const ALLOWED_DOMAIN = "@fullerhorizons.net";
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -12,7 +12,7 @@ export const authOptions: NextAuthOptions = {
   ],
   callbacks: {
     async signIn({ user }) {
-      if (user.email === ALLOWED_EMAIL) {
+      if (user.email && user.email.endsWith(ALLOWED_DOMAIN)) {
         return true;
       }
       return "/unauthorized";

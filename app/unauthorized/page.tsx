@@ -25,7 +25,7 @@ export default function UnauthorizedPage() {
             Sorry, you do not have permission to access this application.
           </p>
           <p className="text-gray-600 text-sm">
-            Only authorized Fuller Horizons personnel can access the invoice creation system.
+            Only Fuller Horizons personnel with a @fullerhorizons.net email can access the invoice creation system.
             If you believe this is an error, please contact your administrator.
           </p>
           <div className="pt-4">
