@@ -1,4 +1,4 @@
-# Fuller Horizons Invoice Creation System
+# Fuller Horizons Ledger System
 
 A Next.js application for creating and managing invoices and expense entries with Google OAuth authentication and Notion database integration.
 
@@ -43,7 +43,7 @@ npm install
 
 1. Go to [Notion Integrations](https://www.notion.so/my-integrations)
 2. Click "New integration"
-3. Name it "Fuller Horizons Invoicing"
+3. Name it "Fuller Horizons Ledger"
 4. Select the workspace where your databases are located
 5. Copy the "Internal Integration Token" (starts with `secret_`)
 6. Share your Notion databases with the integration:
@@ -211,15 +211,15 @@ When an invoice is created, the following data is sent to your Make.com webhook:
    - `MAKE_WEBHOOK_URL` (optional)
 5. Deploy
 
-### Custom Domain (invoicing.fullerhorizons.net)
+### Custom Domain (ledger.fullerhorizons.net)
 
 1. In Vercel project settings, go to "Domains"
-2. Add custom domain: `invoicing.fullerhorizons.net`
+2. Add custom domain: `ledger.fullerhorizons.net`
 3. Update DNS records as instructed by Vercel
 4. Update Google OAuth authorized redirect URIs:
-   - `https://invoicing.fullerhorizons.net/api/auth/callback/google`
+   - `https://ledger.fullerhorizons.net/api/auth/callback/google`
 5. Update `NEXTAUTH_URL` environment variable in Vercel:
-   - `https://invoicing.fullerhorizons.net`
+   - `https://ledger.fullerhorizons.net`
 
 ## Usage
 
