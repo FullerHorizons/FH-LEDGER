@@ -4,6 +4,8 @@ import { authOptions } from "../auth/[...nextauth]/route";
 import { invoiceFormSchema } from "@/lib/validators";
 import { notion, CONSULTING_DATABASE_ID, EXPENSE_DATABASE_ID } from "@/lib/notion-client";
 
+export const dynamic = 'force-dynamic';
+
 async function sendMakeWebhook(data: any) {
   const webhookUrl = process.env.MAKE_WEBHOOK_URL;
   if (!webhookUrl) {
