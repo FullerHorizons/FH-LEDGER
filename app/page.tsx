@@ -25,16 +25,16 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-[#020F23] flex items-center justify-center px-4">
-      <div className="w-full max-w-2xl">
+    <div className="min-h-screen bg-[#020F23] flex items-center justify-center px-4 py-8">
+      <div className="w-full max-w-4xl">
         <div className="text-center mb-12">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-12">
             <Image
               src="/fh_logo_-_full.png"
               alt="Fuller Horizons"
-              width={400}
-              height={300}
-              className="w-auto h-48"
+              width={800}
+              height={600}
+              className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl h-auto"
               priority
             />
           </div>
