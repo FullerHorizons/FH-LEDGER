@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect(() => {
     if (session) {
-      router.push("/invoice-create");
+      router.push("/command-center");
     }
   }, [session, router]);
 
@@ -42,7 +42,7 @@ export default function Home() {
 
         <div className="flex justify-center mt-8">
           <Button
-            onClick={() => signIn("google", { callbackUrl: "/invoice-create" })}
+            onClick={() => signIn("google", { callbackUrl: "/command-center" })}
             size="lg"
             className="bg-white hover:bg-gray-100 text-[#020F23] px-8 py-6 text-lg shadow-lg font-semibold"
           >
