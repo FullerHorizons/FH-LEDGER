@@ -18,14 +18,14 @@ export default function Home() {
 
   if (status === "loading") {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#0a1628]">
+      <div className="min-h-screen flex items-center justify-center bg-[#020F23]">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-[#0a1628] flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#020F23] flex items-center justify-center px-4">
       <div className="w-full max-w-2xl">
         <div className="text-center mb-12">
           <div className="flex justify-center mb-8">
@@ -44,7 +44,7 @@ export default function Home() {
           <Button
             onClick={() => signIn("google", { prompt: "select_account" })}
             size="lg"
-            className="bg-white hover:bg-gray-100 text-[#0a1628] px-8 py-6 text-lg shadow-lg font-semibold"
+            className="bg-white hover:bg-gray-100 text-[#020F23] px-8 py-6 text-lg shadow-lg font-semibold"
           >
             LOGIN
           </Button>
